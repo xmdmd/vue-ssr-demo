@@ -1,4 +1,3 @@
-# CC App内企业查询
 Isomorphic Vue is an opinionated boilerplate for web
 development built on top of [Node.js](https://nodejs.org/),
 [Express](http://expressjs.com/) and
@@ -51,14 +50,6 @@ __/cdn_settings.js__
 export default {
   dev: {
     publicPath: '/'
-  },
-
-  sit: {
-    publicPath: '//sitcache.mycdn.com/'
-  },
-
-  uat: {
-    publicPath: '//uatcache.mycdn.com/'
   },
 
   prod: {
@@ -180,6 +171,4 @@ $ git checkout master
 $ git pull origin master
 $ npm install
 ```
-
-Made with ♥ by Wu Jian Ping
 "# vue-ssr-demo"  
