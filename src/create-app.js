@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import uiView from './components/ui-view'
+import uiView from './routers/components/ui-view'
 import createRouter from './create-router'
 // import { sync } from 'vuex-router-sync'
 

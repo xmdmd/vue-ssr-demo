@@ -127,19 +127,15 @@ app.get('*', (req, res, next) => {
         console.log('myerr', err) // eslint-disable-line
       }
       if (err.statusCode === 404) {
-        console.log('404') // eslint-disable-line
-        // res.redirect('/404')
+        res.redirect('/404')
       } else if (err.statusCode === 401) {
-        console.log('401') // eslint-disable-line
-        // res.status(401).send('401 Page')
+        res.status(403).send('401 Page')
         // TODO: render 401
       } else if (err.statusCode === 403) {
-        console.log('403') // eslint-disable-line
-        // res.status(403).send('403 Page')
+        res.status(403).send('403 Page')
         // TODO: render 403
       } else {
-        console.log('500') // eslint-disable-line
-        // res.redirect('/500')
+        res.redirect('/500')
       }
     })
 })

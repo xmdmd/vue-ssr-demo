@@ -1,8 +1,5 @@
 // vue-router配置
 import view from './components/ui-view'
-import app from './views/app.vue'
-import page1 from './views/page1'
-import page2 from './views/page2'
 export default [
   {
     path: '/',
@@ -10,7 +7,7 @@ export default [
     children: [{
       name: 'home',
       path: '',
-      component: app
+      component: () => import('./views/app.vue')
     }]
   }, {
     path: '/page1',
@@ -18,14 +15,30 @@ export default [
     children: [{
       name: 'page1',
       path: '',
-      component: page1
+      component: () => import('./views/page1')
     }]
   }, {
     path: '/page2',
     component: view,
     children: [{
       path: '',
-      component: page2
+      component: () => import('./views/page2')
+    }]
+  },
+  {
+    path: '/404',
+    component: view,
+    children: [{
+      path: '',
+      component: () => import('./errors/404')
+    }]
+  },
+  {
+    path: '/500',
+    component: view,
+    children: [{
+      path: '',
+      component: () => import('./errors/500')
     }]
   }
 ]

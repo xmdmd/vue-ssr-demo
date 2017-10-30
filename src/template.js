@@ -4,7 +4,7 @@ export default {
       template: `<!DOCTYPE html>
     <html lang="en">
       <head>
-        <title>myvue3</title>
+        <title>vue-ssr-demo</title>
         <meta charset="utf-8">
         <meta content="yes" name="apple-mobile-web-app-capable">
         <meta content="black" name="apple-mobile-web-app-status-bar-style">
@@ -35,7 +35,7 @@ export default {
       template: `<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>myvue3</title>
+<title>vue-ssr-demo</title>
 <meta charset="utf-8">
 <meta content="yes" name="apple-mobile-web-app-capable">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">

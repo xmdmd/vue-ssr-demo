@@ -1,5 +1,5 @@
 {
-  "name": "myvue3",
+  "name": "vue-ssr-demo",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -19,10 +19,6 @@
     "express",
     "babel",
     "es6"
-  ],
-  "author": "Wu Jian Ping <wujjpp@hotmail.com>",
-  "maintainers": [
-    "Wu Jian Ping <wujjpp@hotmail.com>"
   ],
   "license": "MIT",
   "dependencies": {
